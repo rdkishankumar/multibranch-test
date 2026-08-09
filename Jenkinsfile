@@ -1,9 +1,10 @@
 pipeline{
-agent any
-stages{
-stage("Branch test"){
-steps{
-echo "MY New Branch name is ${env.BRANCH_NAME}"
-}
-}
+  agent any
+  stages{
+    stage("Branch-test"){
+      steps{
+        echo "the branch is ${env.BRANCH_NAME}"
+      }
+    }
+  }
 }
